@@ -300,6 +300,35 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
+$primary-120:#003BB7;
+$primary-100:#0068FF;
+$primary-80:#3F95FF;
+$primary-60:#66B1FF;
+$primary-40:#99CFFF;
+$primary-10:#E5F4FF;
+
+$success-120:#48970F;
+$success-100:#7CD31F;
+$success-20:#DDFAA5;
+$success-10:#F0FCD1;
+
+$info-120:#1566B5;
+$info-100:#2AAFFC;
+$info-20:#A9EFFE;
+$info-10:#D4F9FE;
+
+$error-120:#B71D4F;
+$error-100:#FF3A55;
+$error-20:#FFBBB0;
+$error-10:#FFE0D7;
+
+$neutral-100:#000000;
+$neutral-80:#4B4B4B;
+$neutral-60:#909090;
+$neutral-40:#ECECEC;
+$neutral-10:#F9F9F9;
+$neutral-0:#FFFFFF;
+
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -311,6 +340,36 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
+
+"primary-120":$primary-120,
+"primary-100":$primary-100,
+"primary-80":$primary-80,
+"primary-60":$primary-60,
+"primary-40":$primary-40,
+"primary-10":$primary-10,
+
+"success-120":$success-120,
+"success-100":$success-100,
+"success-20":$success-20,
+"success-10":$success-10,
+
+"info-120":$info-120,
+"info-100":$info-100,
+"info-20":$info-20,
+"info-10":$info-10,
+
+"error-120":$error-120,
+"error-100":$error-100,
+"error-20":$error-20,
+"error-10":$error-10,
+
+"neutral-100":$neutral-100,
+"neutral-80":$neutral-80,
+"neutral-60":$neutral-60,
+"neutral-40":$neutral-40,
+"neutral-10":$neutral-10,
+"neutral-0":$neutral-0,
+
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -318,6 +377,8 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark
+
+
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -409,12 +470,22 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  //0: 0,
+  //1: $spacer * .25,
+  //2: $spacer * .5,
+  //3: $spacer,
+  //4: $spacer * 1.5,
+  //5: $spacer * 3,
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer*  0.5,
+  2: $spacer*  0.75,
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer*  1.25,
+  5: $spacer*  1.5,
+  6: $spacer*  2,
+  7: $spacer*  2.5,
+  8: $spacer*  3,
+  9: $spacer*  5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -630,12 +701,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3;//2.5 !default;
+$h2-font-size:                $font-size-base * 2.5;//2 !default;
+$h3-font-size:                $font-size-base * 2;//1.75 !default;
+$h4-font-size:                $font-size-base * 1.75;//1.5 !default;
+$h5-font-size:                $font-size-base * 1.5;//1.25 !default;
+$h6-font-size:                $font-size-base *1.25;//!default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
